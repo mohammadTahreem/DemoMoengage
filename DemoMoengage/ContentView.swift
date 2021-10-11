@@ -6,20 +6,67 @@
 //
 
 import SwiftUI
+import MoEngage
 
 struct ContentView: View {
     
     @State var isSheet = false
+    @State var userEmail = ""
+    @State var userPass = ""
+    @State var loginSuccess = false
+    @State var showAlert = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-            .onTapGesture {
-                isSheet = true
+        NavigationView{
+            VStack{
+                Button(action: {
+                    isSheet = true
+                    let currentConfig = MoEngage.sharedInstance().getDefaultSDKConfiguration()
+                    currentConfig?.analyticsDisablePeriodicFlush = true
+                    MoEngage.sharedInstance().update(currentConfig!)
+                }, label: {
+                    Text("Click to flush the analytics")
+                })
+                       
+                    
+                    .sheet(isPresented: $isSheet) {
+                        Text("Analytics flushed")
+                            .font(.title)
+                            .shadow(radius: 10)
+                    }
+                    .alert( isPresented: $showAlert, content: {
+                        Alert(title: Text("Email missing"), message: Text("Please add an email"), dismissButton: .cancel())
+                    })
+                    
+                
+                VStack{
+                    TextField("email", text: $userEmail)
+                        .padding()
+                        .background(Color.white)
+                        .shadow(radius: 10)
+                    TextField("password", text: $userPass)
+                        .padding()
+                        .background(Color.white)
+                        .shadow(radius: 10)
+                    
+                    NavigationLink(destination: ProfileView(), isActive: $loginSuccess) {
+                        Button("Login"){
+                            if !userEmail.isEmpty{
+                            loginSuccess = true
+                            MoEngage.sharedInstance().setUserUniqueID(userEmail)
+                            }else{
+                                showAlert = true
+                            }
+                        }
+                    }
+                }
+                .padding()
+                .navigationBarTitle(Text("Reset User"))
+                .navigationBarHidden(true)
             }
-            .sheet(isPresented: $isSheet) {
-                Text("Sheet")
-            }
+            
+        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

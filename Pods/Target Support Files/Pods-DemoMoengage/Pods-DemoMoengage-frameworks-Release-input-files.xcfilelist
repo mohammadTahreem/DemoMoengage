@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MORichNotification/MORichNotification.framework/MORichNotification
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngage.framework/MoEngage
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MoEngageCore.framework/MoEngageCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOAnalytics.framework/MOAnalytics
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MoEngage-iOS-SDK/MOMessaging.framework/MOMessaging
