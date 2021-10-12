@@ -16,11 +16,12 @@ struct ProfileView: View {
     @State var userFirstName = ""
     @State var mobileNumber = ""
     @State var showAlert = false
+    @State var settingsSheet = false
     var body: some View {
         VStack{
-        TextField("User email change", text: $userEmailChange)
+            TextField("User email change", text: $userEmailChange)
                 .alert(isPresented: $showAlert, content:{
-                        Alert(title: Text("Add new email"), dismissButton: .cancel())
+                    Alert(title: Text("Add new email"), dismissButton: .cancel())
                 })
                 .padding()
                 .background(Color.white)
@@ -32,6 +33,7 @@ struct ProfileView: View {
                     showAlert = true
                 }
             }
+            .padding()
             
             TextField("User Name", text: $userName)
                 .padding()
@@ -49,13 +51,20 @@ struct ProfileView: View {
                 .padding()
                 .background(Color.white)
                 .shadow(radius: 10)
+                .keyboardType(.numberPad)
             
             Button("Update details"){
-                MoEngage.sharedInstance().setUserName(userName)
-                MoEngage.sharedInstance().setUserLastName(userlastName)
-                MoEngage.sharedInstance().setUserFirstName(userFirstName)
-                MoEngage.sharedInstance().setUserMobileNo(mobileNumber)
+                if !userlastName.isEmpty &&
+                    !userName.isEmpty &&
+                    !userFirstName.isEmpty &&
+                    !mobileNumber.isEmpty{
+                    MoEngage.sharedInstance().setUserName(userName)
+                    MoEngage.sharedInstance().setUserLastName(userlastName)
+                    MoEngage.sharedInstance().setUserFirstName(userFirstName)
+                    MoEngage.sharedInstance().setUserMobileNo(mobileNumber)
+                }
             }
+            .padding()
             
         }
         .padding()
@@ -64,17 +73,19 @@ struct ProfileView: View {
         }
         .navigationTitle(Text("Profile"))
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            Button("Settings"){
+                settingsSheet = true
+            }
+            .sheet(isPresented: $settingsSheet) {
+                Text("Settings")
+            }
+        }
     }
     
     /*
-     MoEngage.sharedInstance().setUserName(userName)
-     MoEngage.sharedInstance().setUserLastName(userLastname)
-     MoEngage.sharedInstance().setUserFirstName(userFirstName)
-     MoEngage.sharedInstance().setUserEmailID(userEmailID)
-     MoEngage.sharedInstance().setUserMobileNo(userPhoneNo)
      MoEngage.sharedInstance().setUserGender(MALE) //Use UserGender enumerator for this
      MoEngage.sharedInstance().setUserDateOfBirth(userBirthdate)//userBirthdate should be a Date instance
-     MoEngage.sharedInstance().setUserLocationLatitude(userLocationLat, andLongitude: userLocationLng)
      */
 }
 

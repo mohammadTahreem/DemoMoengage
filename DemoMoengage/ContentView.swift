@@ -12,7 +12,6 @@ struct ContentView: View {
     
     @State var isSheet = false
     @State var userEmail = ""
-    @State var userPass = ""
     @State var loginSuccess = false
     @State var showAlert = false
     var body: some View {
@@ -43,10 +42,7 @@ struct ContentView: View {
                         .padding()
                         .background(Color.white)
                         .shadow(radius: 10)
-                    TextField("password", text: $userPass)
-                        .padding()
-                        .background(Color.white)
-                        .shadow(radius: 10)
+                    
                     
                     NavigationLink(destination: ProfileView(), isActive: $loginSuccess) {
                         Button("Login"){
@@ -59,6 +55,9 @@ struct ContentView: View {
                         }
                     }
                 }
+                .onAppear(perform: {
+                    userEmail = ""
+                })
                 .padding()
                 .navigationBarTitle(Text("Reset User"))
                 .navigationBarHidden(true)
