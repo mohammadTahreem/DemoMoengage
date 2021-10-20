@@ -16,7 +16,15 @@ struct ContentView: View {
     @State var showAlert = false
     var body: some View {
         NavigationView{
+            ZStack{
+                Color("moBlue")
+                    .ignoresSafeArea()
             VStack{
+                
+                Image("moLogo")
+                    .resizable()
+                    .scaledToFit()
+                
                 Button(action: {
                     isSheet = true
                     let currentConfig = MoEngage.sharedInstance().getDefaultSDKConfiguration()
@@ -24,6 +32,7 @@ struct ContentView: View {
                     MoEngage.sharedInstance().update(currentConfig!)
                 }, label: {
                     Text("Click to flush the analytics")
+                        .foregroundColor(.white)
                 })
                        
                     
@@ -41,18 +50,29 @@ struct ContentView: View {
                     TextField("email", text: $userEmail)
                         .padding()
                         .background(Color.white)
+                        .cornerRadius(10)
                         .shadow(radius: 10)
                     
                     
-                    NavigationLink(destination: ProfileView(), isActive: $loginSuccess) {
-                        Button("Login"){
+                    NavigationLink(destination: TabbedView(), isActive: $loginSuccess) {
+                        Button {
                             if !userEmail.isEmpty{
-                            loginSuccess = true
-                            MoEngage.sharedInstance().setUserUniqueID(userEmail)
+                                loginSuccess = true
+                                MoEngage.sharedInstance().setUserUniqueID(userEmail)
                             }else{
                                 showAlert = true
                             }
+                        } label: {
+                            HStack{
+                                Spacer()
+                                Text("Login")
+                                    .foregroundColor(.white)
+                                Spacer()
+                            }.padding()
+                                .background(Color.blue)
+                                .cornerRadius(10)
                         }
+                        
                     }
                 }
                 .onAppear(perform: {
@@ -61,6 +81,7 @@ struct ContentView: View {
                 .padding()
                 .navigationBarTitle(Text("Reset User"))
                 .navigationBarHidden(true)
+            }
             }
             
         }

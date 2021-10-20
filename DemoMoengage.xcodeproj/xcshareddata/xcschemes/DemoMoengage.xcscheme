@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6FEB833175B0BD3873A86B0AD5646223"
-               BuildableName = "MORichNotification"
-               BlueprintName = "MORichNotification"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "CCF92C2B270D59CA0095164A"
+               BuildableName = "DemoMoengage.app"
+               BlueprintName = "DemoMoengage"
+               ReferencedContainer = "container:DemoMoengage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CCF92C2B270D59CA0095164A"
+            BuildableName = "DemoMoengage.app"
+            BlueprintName = "DemoMoengage"
+            ReferencedContainer = "container:DemoMoengage.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,6 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CCF92C2B270D59CA0095164A"
+            BuildableName = "DemoMoengage.app"
+            BlueprintName = "DemoMoengage"
+            ReferencedContainer = "container:DemoMoengage.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

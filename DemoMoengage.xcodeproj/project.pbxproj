@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		265296BF8D1DD8251381254D /* Pods_DemoMoengage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E61E6192149ECAFD1D3519 /* Pods_DemoMoengage.framework */; };
 		CC2A5BD227140D5600C96068 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A5BD127140D5600C96068 /* ProfileView.swift */; };
+		CC9986B52716A3EB00052A15 /* AllItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9986B42716A3EB00052A15 /* AllItemsView.swift */; };
+		CC9986B72716A47B00052A15 /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9986B62716A47B00052A15 /* TabbedView.swift */; };
+		CC9986B92716A63900052A15 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9986B82716A63900052A15 /* SampleData.swift */; };
+		CC9986BB2716A86700052A15 /* ProductStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9986BA2716A86700052A15 /* ProductStructure.swift */; };
+		CC9986BD2716A96900052A15 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9986BC2716A96900052A15 /* ProductDetails.swift */; };
+		CC9B7DF5271FC315006A5DB7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9B7DF4271FC315006A5DB7 /* UserNotifications.framework */; };
+		CCC6FED52718310C007779CD /* moLogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CCC6FED42718310C007779CD /* moLogo.jpeg */; };
 		CCF92C30270D59CA0095164A /* DemoMoengageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF92C2F270D59CA0095164A /* DemoMoengageApp.swift */; };
 		CCF92C32270D59CA0095164A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF92C31270D59CA0095164A /* ContentView.swift */; };
 		CCF92C34270D59CB0095164A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF92C33270D59CB0095164A /* Assets.xcassets */; };
@@ -18,6 +25,15 @@
 /* Begin PBXFileReference section */
 		94E61E6192149ECAFD1D3519 /* Pods_DemoMoengage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoMoengage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2A5BD127140D5600C96068 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CC97D05B271807F300ECA8E0 /* DemoMoengage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoMoengage.entitlements; sourceTree = "<group>"; };
+		CC97D05C2718114F00ECA8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CC9986B42716A3EB00052A15 /* AllItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemsView.swift; sourceTree = "<group>"; };
+		CC9986B62716A47B00052A15 /* TabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedView.swift; sourceTree = "<group>"; };
+		CC9986B82716A63900052A15 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		CC9986BA2716A86700052A15 /* ProductStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStructure.swift; sourceTree = "<group>"; };
+		CC9986BC2716A96900052A15 /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
+		CC9B7DF4271FC315006A5DB7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		CCC6FED42718310C007779CD /* moLogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moLogo.jpeg; sourceTree = "<group>"; };
 		CCF92C2C270D59CA0095164A /* DemoMoengage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoMoengage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF92C2F270D59CA0095164A /* DemoMoengageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMoengageApp.swift; sourceTree = "<group>"; };
 		CCF92C31270D59CA0095164A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9B7DF5271FC315006A5DB7 /* UserNotifications.framework in Frameworks */,
 				265296BF8D1DD8251381254D /* Pods_DemoMoengage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +59,7 @@
 		0D776177434CAFB3847F3922 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC9B7DF4271FC315006A5DB7 /* UserNotifications.framework */,
 				94E61E6192149ECAFD1D3519 /* Pods_DemoMoengage.framework */,
 			);
 			name = Frameworks;
@@ -77,11 +95,19 @@
 		CCF92C2E270D59CA0095164A /* DemoMoengage */ = {
 			isa = PBXGroup;
 			children = (
+				CC97D05C2718114F00ECA8E0 /* Info.plist */,
+				CC97D05B271807F300ECA8E0 /* DemoMoengage.entitlements */,
 				CCF92C2F270D59CA0095164A /* DemoMoengageApp.swift */,
 				CCF92C31270D59CA0095164A /* ContentView.swift */,
 				CCF92C33270D59CB0095164A /* Assets.xcassets */,
+				CCC6FED42718310C007779CD /* moLogo.jpeg */,
 				CCF92C35270D59CB0095164A /* Preview Content */,
 				CC2A5BD127140D5600C96068 /* ProfileView.swift */,
+				CC9986B42716A3EB00052A15 /* AllItemsView.swift */,
+				CC9986B62716A47B00052A15 /* TabbedView.swift */,
+				CC9986B82716A63900052A15 /* SampleData.swift */,
+				CC9986BA2716A86700052A15 /* ProductStructure.swift */,
+				CC9986BC2716A96900052A15 /* ProductDetails.swift */,
 			);
 			path = DemoMoengage;
 			sourceTree = "<group>";
@@ -154,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC6FED52718310C007779CD /* moLogo.jpeg in Resources */,
 				CCF92C37270D59CB0095164A /* Preview Assets.xcassets in Resources */,
 				CCF92C34270D59CB0095164A /* Assets.xcassets in Resources */,
 			);
@@ -209,8 +236,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCF92C32270D59CA0095164A /* ContentView.swift in Sources */,
+				CC9986B92716A63900052A15 /* SampleData.swift in Sources */,
+				CC9986B72716A47B00052A15 /* TabbedView.swift in Sources */,
 				CC2A5BD227140D5600C96068 /* ProfileView.swift in Sources */,
 				CCF92C30270D59CA0095164A /* DemoMoengageApp.swift in Sources */,
+				CC9986BB2716A86700052A15 /* ProductStructure.swift in Sources */,
+				CC9986BD2716A96900052A15 /* ProductDetails.swift in Sources */,
+				CC9986B52716A3EB00052A15 /* AllItemsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,16 +371,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoMoengage/DemoMoengage.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoMoengage/Preview Content\"";
+				DEVELOPMENT_TEAM = BPWYRAF5X7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoMoengage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,8 +393,9 @@
 				);
 				MARKETING_VERSION = 1.0;
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tahreem.DemoMoengage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tahreem.DemoMoengageTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -370,24 +408,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoMoengage/DemoMoengage.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DemoMoengage/Preview Content\"";
+				DEVELOPMENT_TEAM = BPWYRAF5X7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoMoengage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tahreem.DemoMoengage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tahreem.DemoMoengageTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

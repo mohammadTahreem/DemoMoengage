@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = MORichNotification;
+			productName = MORichNotification;
 		};
 		DC29B4915ADE6A84DB1A8D013EA0D366 /* MoEngage-iOS-SDK */ = {
 			isa = PBXAggregateTarget;
@@ -27,6 +28,7 @@
 				7B706A7AA1F6180A68BA2B792B835E66 /* PBXTargetDependency */,
 			);
 			name = "MoEngage-iOS-SDK";
+			productName = "MoEngage-iOS-SDK";
 		};
 /* End PBXAggregateTarget section */
 
@@ -66,18 +68,18 @@
 		2374665F1FF84637441BC40EA3CEF18F /* Pods-DemoMoengage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoMoengage-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2EC73AB316937CC69C21552D027F46AC /* MORichNotification-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MORichNotification-xcframeworks.sh"; sourceTree = "<group>"; };
 		3792A2B94EE49B830BC399C5F532614B /* Pods-DemoMoengage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DemoMoengage.modulemap"; sourceTree = "<group>"; };
-		420AC3D65862829A1CA234B4FD61E748 /* MOMessaging.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MOMessaging.xcframework; path = Frameworks/MOMessaging.xcframework; sourceTree = "<group>"; };
-		54C0ECC0CEEB9F493DD6EB559EF7BF89 /* MoEngage.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MoEngage.xcframework; path = Frameworks/MoEngage.xcframework; sourceTree = "<group>"; };
+		420AC3D65862829A1CA234B4FD61E748 /* MOMessaging.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = MOMessaging.xcframework; path = Frameworks/MOMessaging.xcframework; sourceTree = "<group>"; };
+		54C0ECC0CEEB9F493DD6EB559EF7BF89 /* MoEngage.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = MoEngage.xcframework; path = Frameworks/MoEngage.xcframework; sourceTree = "<group>"; };
 		54CD8105981CC5509190B048695093D0 /* Pods-DemoMoengage */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DemoMoengage"; path = Pods_DemoMoengage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		578D79EF0232468B0F74BA46656051DB /* Pods-DemoMoengage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoMoengage.debug.xcconfig"; sourceTree = "<group>"; };
 		6F67A220110C3B20832D8EA34D18EEBE /* Pods-DemoMoengage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoMoengage.release.xcconfig"; sourceTree = "<group>"; };
 		703EE1844A65E18E68127114FE277CD0 /* MoEngage-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MoEngage-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B986E52CB99B033EB6ACC17221B2171 /* MoEngageCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MoEngageCore.xcframework; path = Frameworks/MoEngageCore.xcframework; sourceTree = "<group>"; };
-		827DC42862E5B139FBFA8853C6516F86 /* MORichNotification.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MORichNotification.xcframework; path = Frameworks/MORichNotification.xcframework; sourceTree = "<group>"; };
+		7B986E52CB99B033EB6ACC17221B2171 /* MoEngageCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = MoEngageCore.xcframework; path = Frameworks/MoEngageCore.xcframework; sourceTree = "<group>"; };
+		827DC42862E5B139FBFA8853C6516F86 /* MORichNotification.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = MORichNotification.xcframework; path = Frameworks/MORichNotification.xcframework; sourceTree = "<group>"; };
 		86370343E234D59DD83EE2F29B3AA296 /* MoEngage-iOS-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MoEngage-iOS-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F3EB2B21B3621767DB2832B4CF43A92 /* MOAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MOAnalytics.xcframework; path = Frameworks/MOAnalytics.xcframework; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F3EB2B21B3621767DB2832B4CF43A92 /* MOAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = MOAnalytics.xcframework; path = Frameworks/MOAnalytics.xcframework; sourceTree = "<group>"; };
 		A34B794D64A9136C13E6D2CDCF30CAC9 /* Pods-DemoMoengage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoMoengage-Info.plist"; sourceTree = "<group>"; };
 		B6FEC7AEC24ACA3D645F97F27C43377F /* Pods-DemoMoengage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoMoengage-acknowledgements.plist"; sourceTree = "<group>"; };
 		C30EF306D16412E87431DBF59425182A /* Pods-DemoMoengage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DemoMoengage-umbrella.h"; sourceTree = "<group>"; };
@@ -104,7 +106,6 @@
 				D2C3140B3BCFF18AAFA36ACAFB1013B1 /* Frameworks */,
 				BFA09B814F39A9CB09E937C6D49A104E /* Support Files */,
 			);
-			name = MORichNotification;
 			path = MORichNotification;
 			sourceTree = "<group>";
 		};
@@ -114,7 +115,6 @@
 				6B58CC4D23A203B9ACFD82CEB42A056E /* Frameworks */,
 				93B8CA0AD89C148BC469F65DF56F7289 /* Support Files */,
 			);
-			name = "MoEngage-iOS-SDK";
 			path = "MoEngage-iOS-SDK";
 			sourceTree = "<group>";
 		};
@@ -269,7 +269,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -415,7 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,7 +515,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,7 +633,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
