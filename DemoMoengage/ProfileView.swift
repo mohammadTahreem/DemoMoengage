@@ -68,9 +68,6 @@ struct ProfileView: View {
             
         }
         .padding()
-        .onDisappear {
-            MoEngage.sharedInstance().resetUser()
-        }
         .navigationTitle(Text("Profile"))
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {

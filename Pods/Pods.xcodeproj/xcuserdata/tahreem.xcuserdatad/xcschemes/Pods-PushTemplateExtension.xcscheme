@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6FEB833175B0BD3873A86B0AD5646223"
-               BuildableName = "MORichNotification"
-               BlueprintName = "MORichNotification"
+               BlueprintIdentifier = "89F5EA0C9C86B851BB978388DBAD583D"
+               BuildableName = "Pods_PushTemplateExtension.framework"
+               BlueprintName = "Pods-PushTemplateExtension"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6FEB833175B0BD3873A86B0AD5646223"
-               BuildableName = "MORichNotification"
-               BlueprintName = "MORichNotification"
+               BlueprintIdentifier = "F43B08F17C7529CB911DC8C58AC6CCF1"
+               BuildableName = "Pods_NotificationServices.framework"
+               BlueprintName = "Pods-NotificationServices"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

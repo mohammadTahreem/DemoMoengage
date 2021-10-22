@@ -4,7 +4,8 @@ PODS:
   - MORichNotification (5.2.0)
 
 DEPENDENCIES:
-  - MoEngage-iOS-SDK (~> 7.0)
+  - MoEngage-iOS-SDK
+  - MORichNotification
 
 SPEC REPOS:
   trunk:
@@ -15,6 +16,6 @@ SPEC CHECKSUMS:
   MoEngage-iOS-SDK: dbb00d48c2c9355e7bed52b5643be1885f3d9e77
   MORichNotification: e97f0d7462ee6c46796852e81b92c72706fe4105
 
-PODFILE CHECKSUM: 1bfaed1a75f61a92e6ee4b544320f99aadde21e2
+PODFILE CHECKSUM: 9d9bf64c1304d23b1d866ba918d97af1e04ef9e5
 
 COCOAPODS: 1.11.2

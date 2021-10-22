@@ -18,7 +18,7 @@ struct DemoMoengageApp: App {
     }
 }
 
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MOMessagingDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //TODO: Add your MoEngage App ID
@@ -27,10 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         var sdkConfig = MOSDKConfig.init(appID: yourMoEAppID)
         sdkConfig.appGroupID = "group.tahreem.DemoMoengageTestAppGroup"
         
-        
+        // Set the delegate
+              MOMessaging.sharedInstance().messagingDelegate = self
         
         MoEngage.sharedInstance().registerForRemoteNotification(withCategories: nil, withUserNotificationCenterDelegate: self)
-
+        if #available(iOS 10.0, *){
+            UNUserNotificationCenter.current().delegate = self
+        }
         
         // Separate initialization methods for Dev and Prod initializations
 #if DEBUG
@@ -41,6 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         MoEngage.sharedInstance().appStatus(INSTALL)
         MoEngage.enableSDKLogs(true)
         MoEngage.sharedInstance().trackLocale()
+        
+        
         
         //Rest of the implementation of method
         //-------
@@ -66,31 +71,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         return true;
     }
     
-    //MARK:- Methods Deprecated from iOS9
-    
-    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
-        MoEngage.sharedInstance().processURL(url)
-        //rest of the implementation
-        return true
-    }
-    
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        MoEngage.sharedInstance().processURL(url)
-        //rest of the implementation
-        return true
-    }
-    
     
     //Remote notification Registration callback methods
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
       //Call only if MoEngageAppDelegateProxyEnabled is NO
-        //MoEngage.sharedInstance().setPushToken(deviceToken)
+        MoEngage.sharedInstance().setPushToken(deviceToken)
     }
 
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
       //Call only if MoEngageAppDelegateProxyEnabled is NO
-        //MoEngage.sharedInstance().didFailToRegisterForPush()
+        MoEngage.sharedInstance().didFailToRegisterForPush()
+        
     }
     
     
@@ -104,6 +96,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         //Custom Handling of notification if Any
         let pushDictionary = response.notification.request.content.userInfo
+        print(response.notification.request.content.userInfo)
         print(pushDictionary)
         
         completionHandler();
@@ -115,7 +108,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
         //This is to only to display Alert and enable notification sound
-        completionHandler([.sound, .badge])
+        completionHandler([.sound, .badge, .banner, .list])
+        print(notification.request.content.userInfo)
         
     }
 
@@ -125,7 +119,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         //Call only if MoEngageAppDelegateProxyEnabled is NO
         MoEngage.sharedInstance().didReceieveNotificationinApplication(application, withInfo: userInfo)
+        print(userInfo)
       
     }
+    
+    
+    // Mark:- Notification Extension
+    
+    // Notification Clicked Callback
+    func notificationClicked(withScreenName screenName: String?, andKVPairs kvPairs: [AnyHashable : Any]?) {
+            if let screenName = screenName {
+                print("Navigate to Screen:\(screenName)")
+            }
+            
+            if let actionKVPairs = kvPairs {
+                print("Selected Action KVPair:\(actionKVPairs)")
+            }
+    }
+      
+    // Notification Clicked Callback with Push Payload
+    func notificationClicked(withScreenName screenName: String?, kvPairs: [AnyHashable : Any]?, andPushPayload userInfo: [AnyHashable : Any]) {
+            
+            print("Push Payload: \(userInfo)")
+            
+            if let screenName = screenName {
+                print("Navigate to Screen:\(screenName)")
+            }
+            
+            if let actionKVPairs = kvPairs {
+                print("Selected Action KVPair:\(actionKVPairs)")
+            }
+    }
+    
     
 }

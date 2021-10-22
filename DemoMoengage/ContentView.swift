@@ -57,8 +57,8 @@ struct ContentView: View {
                     NavigationLink(destination: TabbedView(), isActive: $loginSuccess) {
                         Button {
                             if !userEmail.isEmpty{
-                                loginSuccess = true
                                 MoEngage.sharedInstance().setUserUniqueID(userEmail)
+                                loginSuccess = true
                             }else{
                                 showAlert = true
                             }
@@ -84,6 +84,9 @@ struct ContentView: View {
             }
             }
             
+        }
+        .onAppear {
+            MoEngage.sharedInstance().resetUser()
         }
     }
     
