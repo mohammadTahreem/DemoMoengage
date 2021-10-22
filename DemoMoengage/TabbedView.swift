@@ -6,20 +6,37 @@
 //
 
 import SwiftUI
+import MoEngage
+import MOGeofence
 
 struct TabbedView: View {
+    
     var body: some View {
         TabView {
             AllItemsView()
                 .tabItem {
-                    Text("All Items")
+                    VStack{
+                        Image(systemName: "list.dash")
+                        Text("All Items")
+                    }
                 }
             ProfileView()
                 .tabItem {
-                    Text("Profile")
+                    VStack{
+                        Image(systemName: "person.crop.circle")
+                        Text("Profile")
+                    }
                 }
         }
-        
+        .toolbar {
+            Button("Notifications"){
+                //do something
+            }
+        }
+        .onAppear {
+            MOGeofenceHandler.sharedInstance()?.startGeofenceMonitoring()
+            
+        }
     }
 }
 

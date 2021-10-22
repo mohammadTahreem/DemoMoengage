@@ -22,12 +22,6 @@ class NotificationService: UNNotificationServiceExtension {
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
         
-//        if let bestAttemptContent = bestAttemptContent {
-//            // Modify the notification content here...
-//            bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
-//
-//            contentHandler(bestAttemptContent)
-//        }
         
         // 3rd Step
               MORichNotification.handle(request, withContentHandler: contentHandler)

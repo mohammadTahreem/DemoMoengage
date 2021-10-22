@@ -12,20 +12,18 @@ import MORichNotification
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
 
-    @IBOutlet var label: UILabel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any required interface initialization here.
+        
         // Set App Group ID
                 MORichNotification.setAppGroupID("group.com.tahreem.DemoMoengageTestAppGroup")
         
     }
     
     func didReceive(_ notification: UNNotification) {
-        self.label?.text = notification.request.content.body
-        // Method to add template to UI
-                MOPushTemplateHandler.sharedInstance().addPushTemplate(to: self, with: notification)
+        MOPushTemplateHandler.sharedInstance().addPushTemplate(to: self, with: notification)
     }
 
 }

@@ -1,21 +1,26 @@
 PODS:
   - MoEngage-iOS-SDK (7.1.1):
     - MORichNotification (< 5.3.0, >= 5.2.0)
+  - MOGeofence (3.1.0):
+    - MoEngage-iOS-SDK (< 7.2.0, >= 7.1.0)
   - MORichNotification (5.2.0)
 
 DEPENDENCIES:
   - MoEngage-iOS-SDK
+  - MOGeofence
   - MORichNotification
 
 SPEC REPOS:
   trunk:
     - MoEngage-iOS-SDK
+    - MOGeofence
     - MORichNotification
 
 SPEC CHECKSUMS:
   MoEngage-iOS-SDK: dbb00d48c2c9355e7bed52b5643be1885f3d9e77
+  MOGeofence: 63ac8906b7cdba22bc60747cbc85a2db89e161af
   MORichNotification: e97f0d7462ee6c46796852e81b92c72706fe4105
 
-PODFILE CHECKSUM: 9d9bf64c1304d23b1d866ba918d97af1e04ef9e5
+PODFILE CHECKSUM: bdc804ef62a0122b0359b4aaec86b1e709fc89a8
 
 COCOAPODS: 1.11.2

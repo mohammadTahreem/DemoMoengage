@@ -14,7 +14,10 @@ struct ContentView: View {
     @State var userEmail = ""
     @State var loginSuccess = false
     @State var showAlert = false
+    
+    
     var body: some View {
+        
         NavigationView{
             ZStack{
                 Color("moBlue")

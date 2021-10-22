@@ -7,7 +7,7 @@ target 'DemoMoengage' do
 
   # Pods for DemoMoengage
 pod 'MoEngage-iOS-SDK'
-
+pod 'MOGeofence'
 end
 
 target 'NotificationServices' do
