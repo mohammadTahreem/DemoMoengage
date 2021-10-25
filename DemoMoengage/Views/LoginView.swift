@@ -1,24 +1,24 @@
 //
-//  ContentView.swift
+//  LoginView.swift
 //  DemoMoengage
 //
-//  Created by Tahreem on 06/10/21.
+//  Created by Tahreem on 25/10/21.
 //
 
 import SwiftUI
 import MoEngage
 
-struct ContentView: View {
+struct LoginView: View {
     
     @State var isSheet = false
     @State var userEmail = ""
     @State var loginSuccess = false
     @State var showAlert = false
     
+    @EnvironmentObject var settings: UserSettings
     
     var body: some View {
         
-        NavigationView{
             ZStack{
                 Color("moBlue")
                     .ignoresSafeArea()
@@ -57,11 +57,12 @@ struct ContentView: View {
                         .shadow(radius: 10)
                     
                     
-                    NavigationLink(destination: TabbedView(), isActive: $loginSuccess) {
+                    
                         Button {
                             if !userEmail.isEmpty{
                                 MoEngage.sharedInstance().setUserUniqueID(userEmail)
                                 loginSuccess = true
+                                settings.loggedIn = true
                             }else{
                                 showAlert = true
                             }
@@ -76,7 +77,7 @@ struct ContentView: View {
                                 .cornerRadius(10)
                         }
                         
-                    }
+                    
                 }
                 .onAppear(perform: {
                     userEmail = ""
@@ -86,17 +87,11 @@ struct ContentView: View {
                 .navigationBarHidden(true)
             }
             }
-            
-        }
-        .onAppear {
-            MoEngage.sharedInstance().resetUser()
-        }
     }
-    
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }

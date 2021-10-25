@@ -67,17 +67,7 @@ struct ProfileView: View {
             .padding()
             
         }
-        .padding()
-        .navigationTitle(Text("Profile"))
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            Button("Settings"){
-                settingsSheet = true
-            }
-            .sheet(isPresented: $settingsSheet) {
-                Text("Settings")
-            }
-        }
+        .padding()        
     }
     
     /*

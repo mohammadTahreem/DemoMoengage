@@ -14,6 +14,7 @@ struct DemoMoengageApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(UserSettings())
         }
     }
 }

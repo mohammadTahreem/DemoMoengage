@@ -10,9 +10,13 @@
 		B45097FBCB04610D5068331D /* Pods_DemoMoengage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B5FD69582C4A87FE9FC4E9 /* Pods_DemoMoengage.framework */; };
 		C2E4A23C9B370689C3CA76C6 /* Pods_PushTemplateExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8111E1D6A2D7AAEC333BB461 /* Pods_PushTemplateExtension.framework */; };
 		CC2A5BD227140D5600C96068 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2A5BD127140D5600C96068 /* ProfileView.swift */; };
+		CC3E8BAC272671FC00A00789 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E8BAB272671FC00A00789 /* UserSettings.swift */; };
+		CC3E8BAE2726726000A00789 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E8BAD2726726000A00789 /* LoginView.swift */; };
+		CC3E8BB0272697C300A00789 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E8BAF272697C300A00789 /* LogoutView.swift */; };
 		CC5B37AE2721A1D20008387B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B37AD2721A1D20008387B /* NotificationService.swift */; };
 		CC5B37B22721A1D20008387B /* NotificationServices.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC5B37AB2721A1D20008387B /* NotificationServices.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CC5B37B62721A1DD0008387B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9B7DF4271FC315006A5DB7 /* UserNotifications.framework */; };
+		CC753B0B27265E3000F594FF /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC753B0A27265E3000F594FF /* InboxView.swift */; };
 		CC9986B52716A3EB00052A15 /* AllItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9986B42716A3EB00052A15 /* AllItemsView.swift */; };
 		CC9986B72716A47B00052A15 /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9986B62716A47B00052A15 /* TabbedView.swift */; };
 		CC9986B92716A63900052A15 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9986B82716A63900052A15 /* SampleData.swift */; };
@@ -73,10 +77,14 @@
 		C2070DEA1DE503A00C420DBA /* Pods-DemoMoengage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoMoengage.debug.xcconfig"; path = "Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage.debug.xcconfig"; sourceTree = "<group>"; };
 		C8B5FD69582C4A87FE9FC4E9 /* Pods_DemoMoengage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoMoengage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2A5BD127140D5600C96068 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CC3E8BAB272671FC00A00789 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		CC3E8BAD2726726000A00789 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CC3E8BAF272697C300A00789 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
 		CC5B37AB2721A1D20008387B /* NotificationServices.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServices.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5B37AD2721A1D20008387B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		CC5B37AF2721A1D20008387B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC5B37B72721A1E20008387B /* NotificationServices.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationServices.entitlements; sourceTree = "<group>"; };
+		CC753B0A27265E3000F594FF /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		CC97D05B271807F300ECA8E0 /* DemoMoengage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoMoengage.entitlements; sourceTree = "<group>"; };
 		CC97D05C2718114F00ECA8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CC9986B42716A3EB00052A15 /* AllItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemsView.swift; sourceTree = "<group>"; };
@@ -158,6 +166,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CC3E8BB12726B45F00A00789 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCF92C31270D59CA0095164A /* ContentView.swift */,
+				CC2A5BD127140D5600C96068 /* ProfileView.swift */,
+				CC9986B42716A3EB00052A15 /* AllItemsView.swift */,
+				CC9986B62716A47B00052A15 /* TabbedView.swift */,
+				CC9986BA2716A86700052A15 /* ProductStructure.swift */,
+				CC9986BC2716A96900052A15 /* ProductDetails.swift */,
+				CC753B0A27265E3000F594FF /* InboxView.swift */,
+				CC3E8BAD2726726000A00789 /* LoginView.swift */,
+				CC3E8BAF272697C300A00789 /* LogoutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CC5B37AC2721A1D20008387B /* NotificationServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,19 +236,15 @@
 		CCF92C2E270D59CA0095164A /* DemoMoengage */ = {
 			isa = PBXGroup;
 			children = (
+				CC3E8BB12726B45F00A00789 /* Views */,
 				CCF92C35270D59CB0095164A /* Preview Content */,
 				CC97D05C2718114F00ECA8E0 /* Info.plist */,
 				CC97D05B271807F300ECA8E0 /* DemoMoengage.entitlements */,
 				CCF92C2F270D59CA0095164A /* DemoMoengageApp.swift */,
-				CCF92C31270D59CA0095164A /* ContentView.swift */,
 				CCF92C33270D59CB0095164A /* Assets.xcassets */,
 				CCC6FED42718310C007779CD /* moLogo.jpeg */,
-				CC2A5BD127140D5600C96068 /* ProfileView.swift */,
-				CC9986B42716A3EB00052A15 /* AllItemsView.swift */,
-				CC9986B62716A47B00052A15 /* TabbedView.swift */,
 				CC9986B82716A63900052A15 /* SampleData.swift */,
-				CC9986BA2716A86700052A15 /* ProductStructure.swift */,
-				CC9986BC2716A96900052A15 /* ProductDetails.swift */,
+				CC3E8BAB272671FC00A00789 /* UserSettings.swift */,
 			);
 			path = DemoMoengage;
 			sourceTree = "<group>";
@@ -477,10 +497,14 @@
 				CCF92C32270D59CA0095164A /* ContentView.swift in Sources */,
 				CC9986B92716A63900052A15 /* SampleData.swift in Sources */,
 				CC9986B72716A47B00052A15 /* TabbedView.swift in Sources */,
+				CC3E8BAC272671FC00A00789 /* UserSettings.swift in Sources */,
+				CC3E8BB0272697C300A00789 /* LogoutView.swift in Sources */,
 				CC2A5BD227140D5600C96068 /* ProfileView.swift in Sources */,
 				CCF92C30270D59CA0095164A /* DemoMoengageApp.swift in Sources */,
 				CC9986BB2716A86700052A15 /* ProductStructure.swift in Sources */,
 				CC9986BD2716A96900052A15 /* ProductDetails.swift in Sources */,
+				CC3E8BAE2726726000A00789 /* LoginView.swift in Sources */,
+				CC753B0B27265E3000F594FF /* InboxView.swift in Sources */,
 				CC9986B52716A3EB00052A15 /* AllItemsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

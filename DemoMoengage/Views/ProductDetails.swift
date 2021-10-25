@@ -10,6 +10,7 @@ import MoEngage
 
 struct ProductDetails: View {
     var product: SampleData
+    @State var openInbox = false
     @State var addToCart = true
     var body: some View {
         VStack{
@@ -33,6 +34,10 @@ struct ProductDetails: View {
             .cornerRadius(10)
             .shadow(radius: 10)
         }
+        .toolbar{
+            LogoutView(openInbox: $openInbox, count: MOInbox.getUnreadNotifictionCount())
+        }
+        .navigationTitle(Text("Product Details"))
     }
     
     func createEvent(productName: String){
