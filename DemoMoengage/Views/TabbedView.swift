@@ -8,6 +8,7 @@
 import SwiftUI
 import MoEngage
 import MOGeofence
+import MOInApp
 
 struct TabbedView: View {
     
@@ -36,8 +37,20 @@ struct TabbedView: View {
             }
             .navigationTitle("All items")
             .onAppear {
+                
+                MOInApp.sharedInstance().show()
                 MOGeofenceHandler.sharedInstance()?.startGeofenceMonitoring()
                 MOInbox.getUnreadNotifictionCount()
+                
+                func locManager(_ locationManager: CLLocationManager!, didEnter region: CLRegion!) {
+                    print("GeoFence Entered")
+                }
+                func locManager(_ locationManager: CLLocationManager!, didExitRegion region: CLRegion!) {
+                    print("GeoFence Exit")
+                }
+                MOInApp.sharedInstance().setCurrentInAppContexts(["Home","CategoriesScreen"])
+
+                MOInApp.sharedInstance().showNudge(at: NudgePositionTop)
             }
         }
     }

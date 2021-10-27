@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		2D600AAD7FD09C0FB418D95D26038256 /* MoEngageInApp */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8CDD707A1EE52D9AE8EF31B7B3E81C3E /* Build configuration list for PBXAggregateTarget "MoEngageInApp" */;
+			buildPhases = (
+				ED8D6478B5335D011EB2A313F1B7887B /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				A5F7FAFC2F1693FACA63201C69B2E64D /* PBXTargetDependency */,
+			);
+			name = MoEngageInApp;
+		};
 		6FEB833175B0BD3873A86B0AD5646223 /* MORichNotification */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 68CDEAD978284D89A9A158BAC63401D4 /* Build configuration list for PBXAggregateTarget "MORichNotification" */;
+			buildConfigurationList = 14491F3FADA0FB666EB1996E65AE404C /* Build configuration list for PBXAggregateTarget "MORichNotification" */;
 			buildPhases = (
-				6FF946C938E58320176D8471F6C8C0B1 /* [CP] Copy XCFrameworks */,
+				FEB9DA842B16746A0283E8B4C46D2974 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
@@ -24,136 +35,162 @@
 				29ABE13333AB7965AC442C3838DE261B /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				0B00A0570B0FB6B65516D2194803D408 /* PBXTargetDependency */,
+				030AB689A67D65744D4571200BFEAAAA /* PBXTargetDependency */,
 			);
 			name = MOGeofence;
 		};
 		DC29B4915ADE6A84DB1A8D013EA0D366 /* MoEngage-iOS-SDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = D5B051C842A900D793799163C28140D8 /* Build configuration list for PBXAggregateTarget "MoEngage-iOS-SDK" */;
+			buildConfigurationList = 9F5E186E3C148F040331F376F04A003D /* Build configuration list for PBXAggregateTarget "MoEngage-iOS-SDK" */;
 			buildPhases = (
-				A86539F52B9E559626AD1F8AE2E74689 /* [CP] Copy XCFrameworks */,
+				B87F2C3D2E36AABC9022D28D6F91C619 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				DE13831D13C2B532A853DE69F988740D /* PBXTargetDependency */,
+				BDE2A2D18D696BB1C8104E74DE2586BA /* PBXTargetDependency */,
 			);
 			name = "MoEngage-iOS-SDK";
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0DD98E064B033297FE4B21BF080936BB /* Pods-DemoMoengage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5207674746DBEBAE52A05A6A5C3B9EB0 /* Pods-DemoMoengage-dummy.m */; };
 		1232781BC65F7C48F40067CD1032C646 /* Pods-PushTemplateExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5AF63069E2858FA731078FDB877F9CB /* Pods-PushTemplateExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D86D453776BD4AFCF421A44CD9AA0A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		46F6E8CC16111BE5084858C06D8386C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4EED4F8F271392DF1CC75210CA83578F /* Pods-DemoMoengage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3F6AB9132BCED982AC71296A3EB91BF /* Pods-DemoMoengage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52F6A8C00502404FB3A1F1DF806CC6AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		64B476ADAEA1AAD2CE5FEFB70E1AA0A2 /* Pods-PushTemplateExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1C957CC0E8F2DF6F3A54DCEDD11825 /* Pods-PushTemplateExtension-dummy.m */; };
-		6967DCFAEAE088B0CDFE2008578B6DF2 /* Pods-DemoMoengage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3F6AB9132BCED982AC71296A3EB91BF /* Pods-DemoMoengage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E4FBF0B14A71966E90F810F7F750F32 /* Pods-DemoMoengage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5207674746DBEBAE52A05A6A5C3B9EB0 /* Pods-DemoMoengage-dummy.m */; };
 		BF5C73D860FE9E3F5D796F8ECDE636AC /* Pods-NotificationServices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5E15E79D0CFDFBF64A6A2AD50FD9E2 /* Pods-NotificationServices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5A4879799F50F1BE613A994DDF2E040 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F1E3C99B6CDE7E140219F45343B16215 /* Pods-NotificationServices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8EC54BD88615F0F33F950AF677DCB /* Pods-NotificationServices-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3B805C9EB2F3F1A016F7C3E9D1333F23 /* PBXContainerItemProxy */ = {
+		185B2003825EE57FD23A07EFA2B25F73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6FEB833175B0BD3873A86B0AD5646223;
 			remoteInfo = MORichNotification;
 		};
-		5101F80AAFCE0FDE07B3977E0BF337D3 /* PBXContainerItemProxy */ = {
+		1DD3037B7DE1FF1BFAEF89B055890257 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6FEB833175B0BD3873A86B0AD5646223;
 			remoteInfo = MORichNotification;
 		};
-		6F3B8584C143063F223E01CF54D7B258 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC29B4915ADE6A84DB1A8D013EA0D366;
-			remoteInfo = "MoEngage-iOS-SDK";
-		};
-		6F7B9E15E4D986884A669974E6470EE1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC29B4915ADE6A84DB1A8D013EA0D366;
-			remoteInfo = "MoEngage-iOS-SDK";
-		};
-		7C8989E7FBDCAD3408D64EA08BDFEE70 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6FEB833175B0BD3873A86B0AD5646223;
-			remoteInfo = MORichNotification;
-		};
-		90A5B02121821998E26E8FE638145ED2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6FEB833175B0BD3873A86B0AD5646223;
-			remoteInfo = MORichNotification;
-		};
-		CFFE94463A0019CD09B69D4749331685 /* PBXContainerItemProxy */ = {
+		3F895966EF19E545F9A4EEA93C8D1C04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B8FD681D1792FD2481F2626C6C66F031;
 			remoteInfo = MOGeofence;
 		};
+		516E084B82162EA6B31F51C65B353D40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC29B4915ADE6A84DB1A8D013EA0D366;
+			remoteInfo = "MoEngage-iOS-SDK";
+		};
+		55B7CBB0D966AAEC974AF5FBC0FE40B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC29B4915ADE6A84DB1A8D013EA0D366;
+			remoteInfo = "MoEngage-iOS-SDK";
+		};
+		621E5DD48B8B69B4B9323AB5A1E28A15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FEB833175B0BD3873A86B0AD5646223;
+			remoteInfo = MORichNotification;
+		};
+		7D25795087267EC316F718279DDA19A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D600AAD7FD09C0FB418D95D26038256;
+			remoteInfo = MoEngageInApp;
+		};
+		86EA8EC3DCB3DBF4A8D138404F09D0D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC29B4915ADE6A84DB1A8D013EA0D366;
+			remoteInfo = "MoEngage-iOS-SDK";
+		};
+		F3B0F2A6FED84DFC3BE0805FD0CAC2AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FEB833175B0BD3873A86B0AD5646223;
+			remoteInfo = MORichNotification;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04D51273AFDC1BFD45B97AAE00D134DB /* MOGeofence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MOGeofence.release.xcconfig; sourceTree = "<group>"; };
+		01563A01F3BE72F79CA0FF8432F80973 /* MORichNotification.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MORichNotification.xcframework; path = Frameworks/MORichNotification.xcframework; sourceTree = "<group>"; };
+		0363F2290A8E7D176DFDC078C8DFFE64 /* MORichNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MORichNotification.debug.xcconfig; sourceTree = "<group>"; };
+		0905C0C2661BB0436B734AE39BCE9B4C /* MOGeofence-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MOGeofence-xcframeworks.sh"; sourceTree = "<group>"; };
 		0EE8EC54BD88615F0F33F950AF677DCB /* Pods-NotificationServices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotificationServices-dummy.m"; sourceTree = "<group>"; };
 		1141E0B57A8C92BBB4E487B3A5D279E9 /* Pods-DemoMoengage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoMoengage-acknowledgements.plist"; sourceTree = "<group>"; };
+		119929D71853EC36388EB5E6FD9098A3 /* MoEngageInApp-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MoEngageInApp-xcframeworks.sh"; sourceTree = "<group>"; };
 		1399844C83D66B571749004F6BE23AFC /* Pods-NotificationServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationServices.release.xcconfig"; sourceTree = "<group>"; };
 		14BA287AF5A463B69D196F4A241D0C12 /* Pods-PushTemplateExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushTemplateExtension-acknowledgements.plist"; sourceTree = "<group>"; };
-		2078E8B421A389893304036FC2287605 /* MORichNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MORichNotification.release.xcconfig; sourceTree = "<group>"; };
-		2C768A73C9B8867EFAA8477C16BF45B0 /* MOGeofence-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MOGeofence-xcframeworks.sh"; sourceTree = "<group>"; };
+		18B0AA19211D4C516258408C04547E5F /* MoEngageInApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MoEngageInApp.release.xcconfig; sourceTree = "<group>"; };
+		23D29ACF79823DE54992354A6449B3B6 /* MOGeofence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MOGeofence.debug.xcconfig; sourceTree = "<group>"; };
 		2DB0B26D05CE9757F68E8D684109D5B9 /* Pods-NotificationServices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NotificationServices.modulemap"; sourceTree = "<group>"; };
 		364151960B8CAD7CB08FC3E6BAC4576F /* Pods-DemoMoengage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DemoMoengage-frameworks.sh"; sourceTree = "<group>"; };
+		41E438A701B9A6DC4AA15AFD804C8DD2 /* MORichNotification-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MORichNotification-xcframeworks.sh"; sourceTree = "<group>"; };
+		42AF46F8B84F9FC415D7DEC153124619 /* MoEngage-iOS-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MoEngage-iOS-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		43267E3B381723E1333FDB0677CBED2C /* MoEngageInApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MoEngageInApp.debug.xcconfig; sourceTree = "<group>"; };
 		447BC1858EFE8DFFE4C2DBDEA2B46250 /* Pods-NotificationServices-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotificationServices-acknowledgements.plist"; sourceTree = "<group>"; };
+		44D86985634D3F65D5A0C42AAEC5D2A7 /* MoEngage-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MoEngage-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		474AF59D8B01F3E220DC2F639B477522 /* Pods-DemoMoengage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DemoMoengage-Info.plist"; sourceTree = "<group>"; };
 		4F5E15E79D0CFDFBF64A6A2AD50FD9E2 /* Pods-NotificationServices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotificationServices-umbrella.h"; sourceTree = "<group>"; };
 		501FAC55EA4F0C4F8F85CE6CA55EE5BA /* Pods-NotificationServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotificationServices.debug.xcconfig"; sourceTree = "<group>"; };
 		50D668CEB0833FB3C2E726346CA41EEB /* Pods-PushTemplateExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushTemplateExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		5207674746DBEBAE52A05A6A5C3B9EB0 /* Pods-DemoMoengage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DemoMoengage-dummy.m"; sourceTree = "<group>"; };
 		54CD8105981CC5509190B048695093D0 /* Pods-DemoMoengage */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DemoMoengage"; path = Pods_DemoMoengage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58AAD243D8ED08A77F817845C021D527 /* MOGeofence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MOGeofence.debug.xcconfig; sourceTree = "<group>"; };
 		5C1C957CC0E8F2DF6F3A54DCEDD11825 /* Pods-PushTemplateExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PushTemplateExtension-dummy.m"; sourceTree = "<group>"; };
-		5CB244EDA52D5A21997963E3077927D2 /* MoEngage.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MoEngage.xcframework; path = Frameworks/MoEngage.xcframework; sourceTree = "<group>"; };
 		5F6D8E2A067826F8D6DD7C542E018F9F /* Pods-DemoMoengage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoMoengage.debug.xcconfig"; sourceTree = "<group>"; };
 		60825A75D5393E475839B17B2651B0B2 /* Pods-PushTemplateExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PushTemplateExtension"; path = Pods_PushTemplateExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6187A3487A0DA4EAEBF61F05C0D9B703 /* MOAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MOAnalytics.xcframework; path = Frameworks/MOAnalytics.xcframework; sourceTree = "<group>"; };
+		638E1D2CAF205631529187B9707D4636 /* MOGeofence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MOGeofence.release.xcconfig; sourceTree = "<group>"; };
 		6476315FE0E2FEDFBC812A696E6B535A /* Pods-PushTemplateExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushTemplateExtension-Info.plist"; sourceTree = "<group>"; };
-		6BE5496ECF43A4DD03A9A93D091B889C /* MoEngage-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MoEngage-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7AE47B0D7842BDCE3035E888A60D1C33 /* MoEngageCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MoEngageCore.xcframework; path = Frameworks/MoEngageCore.xcframework; sourceTree = "<group>"; };
 		859D696FCFA080015C21172F1530795F /* Pods-PushTemplateExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PushTemplateExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8C5D35D369595E8EC9B736E476AC77A6 /* Pods-NotificationServices */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NotificationServices"; path = Pods_NotificationServices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B41E737415F0E72ECEDE3997AC80B1 /* Pods-DemoMoengage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DemoMoengage.modulemap"; sourceTree = "<group>"; };
 		9B6CB9A04BDC922C7CB3B60009E4F32D /* Pods-DemoMoengage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DemoMoengage-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A03C180F037037C1C7776CDC8E4863F1 /* Pods-PushTemplateExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PushTemplateExtension.modulemap"; sourceTree = "<group>"; };
+		A558186BDE46F4470BAFE7C7B383AA36 /* MOInApp.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MOInApp.xcframework; path = Frameworks/MOInApp.xcframework; sourceTree = "<group>"; };
 		A5AF63069E2858FA731078FDB877F9CB /* Pods-PushTemplateExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PushTemplateExtension-umbrella.h"; sourceTree = "<group>"; };
+		A74F490E4C754D38D8A87E218D9159DA /* MoEngageCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MoEngageCore.xcframework; path = Frameworks/MoEngageCore.xcframework; sourceTree = "<group>"; };
 		AF50CE3D3D13E3B88C0D5EB14F8125C5 /* Pods-NotificationServices-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotificationServices-Info.plist"; sourceTree = "<group>"; };
-		B403F63861D34B27EA57D24359C7E3F4 /* MoEngage-iOS-SDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MoEngage-iOS-SDK-xcframeworks.sh"; sourceTree = "<group>"; };
-		B5CDC85AF2AD162DCA46EA6C4D710D91 /* MOGeofence.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MOGeofence.xcframework; path = Frameworks/MOGeofence.xcframework; sourceTree = "<group>"; };
-		D0C5AAF654C69D6A8DAF70283F83AC97 /* MOMessaging.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MOMessaging.xcframework; path = Frameworks/MOMessaging.xcframework; sourceTree = "<group>"; };
-		D585F055413AD475D3125084EB46CCD5 /* MORichNotification-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MORichNotification-xcframeworks.sh"; sourceTree = "<group>"; };
+		B6DA16744BE4051D3B8A01B84A25260F /* MOAnalytics.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MOAnalytics.xcframework; path = Frameworks/MOAnalytics.xcframework; sourceTree = "<group>"; };
+		BD621F4D85459BB6A9244DF2F5D897F7 /* MOMessaging.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MOMessaging.xcframework; path = Frameworks/MOMessaging.xcframework; sourceTree = "<group>"; };
+		BEAC14FD902ADA15F630858509487B6E /* MoEngage.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MoEngage.xcframework; path = Frameworks/MoEngage.xcframework; sourceTree = "<group>"; };
+		CABB7FCCA609CF8A43B940B35EBF93C2 /* MOGeofence.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MOGeofence.xcframework; path = Frameworks/MOGeofence.xcframework; sourceTree = "<group>"; };
 		D62B98807F639BAF989C798429A749C0 /* Pods-PushTemplateExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushTemplateExtension.release.xcconfig"; sourceTree = "<group>"; };
-		D99B88F34BAB7092261EAC1449BF21FE /* MoEngage-iOS-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MoEngage-iOS-SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		DEA56CFF0679DD8500397F0CEED562CF /* MORichNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MORichNotification.debug.xcconfig; sourceTree = "<group>"; };
 		E3F6AB9132BCED982AC71296A3EB91BF /* Pods-DemoMoengage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DemoMoengage-umbrella.h"; sourceTree = "<group>"; };
+		E40E82A2CC18B8E85C8B9C42A7698B9E /* MoEngage-iOS-SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MoEngage-iOS-SDK.release.xcconfig"; sourceTree = "<group>"; };
+		E9BA4C86042B9BDA8139CF96E1D9AAD2 /* MORichNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MORichNotification.release.xcconfig; sourceTree = "<group>"; };
 		F51724C5DD5DAC46E101F98905DD543B /* Pods-DemoMoengage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DemoMoengage.release.xcconfig"; sourceTree = "<group>"; };
-		F86337B3D132DD506D2D1FDFCB162887 /* MORichNotification.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = MORichNotification.xcframework; path = Frameworks/MORichNotification.xcframework; sourceTree = "<group>"; };
 		FD87AD2F3255A1962F0273AE53198870 /* Pods-NotificationServices-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotificationServices-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3E94B6FAAE300F7D50207522764EABC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F6E8CC16111BE5084858C06D8386C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62F44BFF44D11ED06EE34AEA5BAD1D70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,53 +207,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF58AC3AFB88AD999F8046897D4BE05A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5A4879799F50F1BE613A994DDF2E040 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AF90DB0E424F13B4DA86772CA687EE7 /* Frameworks */ = {
+		1535C524A18F597D41A02D9E21F2BE80 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F86337B3D132DD506D2D1FDFCB162887 /* MORichNotification.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		262AD02CC0497315C9C852C8F62ECD7F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D585F055413AD475D3125084EB46CCD5 /* MORichNotification-xcframeworks.sh */,
-				DEA56CFF0679DD8500397F0CEED562CF /* MORichNotification.debug.xcconfig */,
-				2078E8B421A389893304036FC2287605 /* MORichNotification.release.xcconfig */,
+				119929D71853EC36388EB5E6FD9098A3 /* MoEngageInApp-xcframeworks.sh */,
+				43267E3B381723E1333FDB0677CBED2C /* MoEngageInApp.debug.xcconfig */,
+				18B0AA19211D4C516258408C04547E5F /* MoEngageInApp.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MORichNotification";
+			path = "../Target Support Files/MoEngageInApp";
 			sourceTree = "<group>";
 		};
-		2A580ECA7870A0DD54C14DE87A99E5C9 /* Support Files */ = {
+		301990DE48F175203DE38E4876AFF95B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2C768A73C9B8867EFAA8477C16BF45B0 /* MOGeofence-xcframeworks.sh */,
-				58AAD243D8ED08A77F817845C021D527 /* MOGeofence.debug.xcconfig */,
-				04D51273AFDC1BFD45B97AAE00D134DB /* MOGeofence.release.xcconfig */,
+				42AF46F8B84F9FC415D7DEC153124619 /* MoEngage-iOS-SDK-xcframeworks.sh */,
+				44D86985634D3F65D5A0C42AAEC5D2A7 /* MoEngage-iOS-SDK.debug.xcconfig */,
+				E40E82A2CC18B8E85C8B9C42A7698B9E /* MoEngage-iOS-SDK.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MOGeofence";
-			sourceTree = "<group>";
-		};
-		2DE100C16B2E263D1224D7AF342B97B1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B5CDC85AF2AD162DCA46EA6C4D710D91 /* MOGeofence.xcframework */,
-			);
-			name = Frameworks;
+			path = "../Target Support Files/MoEngage-iOS-SDK";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -237,6 +250,27 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		6D7F0C3F441B4740A251603E8EE02AC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6DA16744BE4051D3B8A01B84A25260F /* MOAnalytics.xcframework */,
+				BEAC14FD902ADA15F630858509487B6E /* MoEngage.xcframework */,
+				A74F490E4C754D38D8A87E218D9159DA /* MoEngageCore.xcframework */,
+				BD621F4D85459BB6A9244DF2F5D897F7 /* MOMessaging.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		777540CB08AB04EF5647F500F5583C29 /* MOGeofence */ = {
+			isa = PBXGroup;
+			children = (
+				F55A3AB1B105C50CF5E68BBEA30050E2 /* Frameworks */,
+				AE1092079C5EE23F6DC23B50BC99E73D /* Support Files */,
+			);
+			name = MOGeofence;
+			path = MOGeofence;
+			sourceTree = "<group>";
+		};
 		78D6E0B4B571B5B5420860D4B41622E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,45 +281,53 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		889E4B09493D6191D3F5DD1BFBD5C220 /* MOGeofence */ = {
+		7A7E99B2293AEB378BD1232149D5F670 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2DE100C16B2E263D1224D7AF342B97B1 /* Frameworks */,
-				2A580ECA7870A0DD54C14DE87A99E5C9 /* Support Files */,
+				A558186BDE46F4470BAFE7C7B383AA36 /* MOInApp.xcframework */,
 			);
-			name = MOGeofence;
-			path = MOGeofence;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8EEC2647B1AAB50856FD73325BD0596B /* Support Files */ = {
+		829CB40B547DCD01FBB96CDF198A2ED8 /* MoEngageInApp */ = {
 			isa = PBXGroup;
 			children = (
-				B403F63861D34B27EA57D24359C7E3F4 /* MoEngage-iOS-SDK-xcframeworks.sh */,
-				D99B88F34BAB7092261EAC1449BF21FE /* MoEngage-iOS-SDK.debug.xcconfig */,
-				6BE5496ECF43A4DD03A9A93D091B889C /* MoEngage-iOS-SDK.release.xcconfig */,
+				7A7E99B2293AEB378BD1232149D5F670 /* Frameworks */,
+				1535C524A18F597D41A02D9E21F2BE80 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MoEngage-iOS-SDK";
+			name = MoEngageInApp;
+			path = MoEngageInApp;
 			sourceTree = "<group>";
 		};
-		91E145C9E86B04643C1E729AFC10A3EC /* MoEngage-iOS-SDK */ = {
+		8779C14960162CB5CCD8A90F4FC848E9 /* MORichNotification */ = {
 			isa = PBXGroup;
 			children = (
-				EFCBDFCB76FAFF13D91DA6DF1F60F3B8 /* Frameworks */,
-				8EEC2647B1AAB50856FD73325BD0596B /* Support Files */,
+				F7CDAC9F50C47FFFA72ECCB1079F79B1 /* Frameworks */,
+				DC90246D01FF4C76AEAE2184533B2A28 /* Support Files */,
+			);
+			name = MORichNotification;
+			path = MORichNotification;
+			sourceTree = "<group>";
+		};
+		87FB1D32D00F4D1BE59CFB40B9A19A70 /* MoEngage-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				6D7F0C3F441B4740A251603E8EE02AC6 /* Frameworks */,
+				301990DE48F175203DE38E4876AFF95B /* Support Files */,
 			);
 			name = "MoEngage-iOS-SDK";
 			path = "MoEngage-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		CC1C5A315E46C315C6E6E90520234934 /* MORichNotification */ = {
+		AE1092079C5EE23F6DC23B50BC99E73D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0AF90DB0E424F13B4DA86772CA687EE7 /* Frameworks */,
-				262AD02CC0497315C9C852C8F62ECD7F /* Support Files */,
+				0905C0C2661BB0436B734AE39BCE9B4C /* MOGeofence-xcframeworks.sh */,
+				23D29ACF79823DE54992354A6449B3B6 /* MOGeofence.debug.xcconfig */,
+				638E1D2CAF205631529187B9707D4636 /* MOGeofence.release.xcconfig */,
 			);
-			name = MORichNotification;
-			path = MORichNotification;
+			name = "Support Files";
+			path = "../Target Support Files/MOGeofence";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -293,7 +335,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F4136109A73C1629E23EFE8415BDC880 /* Pods */,
+				F0DC13F3E697685FFC579B6FF77378D4 /* Pods */,
 				78D6E0B4B571B5B5420860D4B41622E1 /* Products */,
 				6843D32BB841EE9BB8F09301342F46D5 /* Targets Support Files */,
 			);
@@ -340,25 +382,42 @@
 			path = "Target Support Files/Pods-DemoMoengage";
 			sourceTree = "<group>";
 		};
-		EFCBDFCB76FAFF13D91DA6DF1F60F3B8 /* Frameworks */ = {
+		DC90246D01FF4C76AEAE2184533B2A28 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6187A3487A0DA4EAEBF61F05C0D9B703 /* MOAnalytics.xcframework */,
-				5CB244EDA52D5A21997963E3077927D2 /* MoEngage.xcframework */,
-				7AE47B0D7842BDCE3035E888A60D1C33 /* MoEngageCore.xcframework */,
-				D0C5AAF654C69D6A8DAF70283F83AC97 /* MOMessaging.xcframework */,
+				41E438A701B9A6DC4AA15AFD804C8DD2 /* MORichNotification-xcframeworks.sh */,
+				0363F2290A8E7D176DFDC078C8DFFE64 /* MORichNotification.debug.xcconfig */,
+				E9BA4C86042B9BDA8139CF96E1D9AAD2 /* MORichNotification.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MORichNotification";
+			sourceTree = "<group>";
+		};
+		F0DC13F3E697685FFC579B6FF77378D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87FB1D32D00F4D1BE59CFB40B9A19A70 /* MoEngage-iOS-SDK */,
+				829CB40B547DCD01FBB96CDF198A2ED8 /* MoEngageInApp */,
+				777540CB08AB04EF5647F500F5583C29 /* MOGeofence */,
+				8779C14960162CB5CCD8A90F4FC848E9 /* MORichNotification */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F55A3AB1B105C50CF5E68BBEA30050E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CABB7FCCA609CF8A43B940B35EBF93C2 /* MOGeofence.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F4136109A73C1629E23EFE8415BDC880 /* Pods */ = {
+		F7CDAC9F50C47FFFA72ECCB1079F79B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				91E145C9E86B04643C1E729AFC10A3EC /* MoEngage-iOS-SDK */,
-				889E4B09493D6191D3F5DD1BFBD5C220 /* MOGeofence */,
-				CC1C5A315E46C315C6E6E90520234934 /* MORichNotification */,
+				01563A01F3BE72F79CA0FF8432F80973 /* MORichNotification.xcframework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FCFFFFA9A2ED9CCBFF06340BE62C8F4C /* Pods-NotificationServices */ = {
@@ -380,11 +439,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2899BF7227E742EA3EB2669AB4E7A016 /* Headers */ = {
+		0ECC7EC77A6F895BB2C3F53B5EEB3F48 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6967DCFAEAE088B0CDFE2008578B6DF2 /* Pods-DemoMoengage-umbrella.h in Headers */,
+				4EED4F8F271392DF1CC75210CA83578F /* Pods-DemoMoengage-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,19 +468,20 @@
 /* Begin PBXNativeTarget section */
 		38BEC3D31662DF4B64D4D10BB49D53E7 /* Pods-DemoMoengage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9707E18B5DFD6B56FFF13F50FC5463B /* Build configuration list for PBXNativeTarget "Pods-DemoMoengage" */;
+			buildConfigurationList = D7982B702670D222FCA8827BDB706532 /* Build configuration list for PBXNativeTarget "Pods-DemoMoengage" */;
 			buildPhases = (
-				2899BF7227E742EA3EB2669AB4E7A016 /* Headers */,
-				F596EBA1723C4CA6154BE13F85A6C1BF /* Sources */,
-				DF58AC3AFB88AD999F8046897D4BE05A /* Frameworks */,
-				65E451598A9325F01B07ACD28F79D880 /* Resources */,
+				0ECC7EC77A6F895BB2C3F53B5EEB3F48 /* Headers */,
+				63993097AB2B3CDB9C3B7BCFB3CB128F /* Sources */,
+				3E94B6FAAE300F7D50207522764EABC6 /* Frameworks */,
+				083569CE36C3CE7DCF011677BE7BEF86 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9DD9A7A658EE143EAFB5CE48CE86ACEE /* PBXTargetDependency */,
-				3BA824B93C99F8BF28D680784822E53F /* PBXTargetDependency */,
-				75A4D1B013607F83FDCD59628CE67384 /* PBXTargetDependency */,
+				8DE170AD0240A876E8E6EAAE2408B33D /* PBXTargetDependency */,
+				E3782F40588CD8EC0F59AC3420836DB1 /* PBXTargetDependency */,
+				003FE1D5A2A398634EBF412D55EE597E /* PBXTargetDependency */,
+				208001A5F78915CFC16EBDA7343AF89E /* PBXTargetDependency */,
 			);
 			name = "Pods-DemoMoengage";
 			productName = Pods_DemoMoengage;
@@ -440,7 +500,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0F744DE0BA63E2CAFF1DA9DBF8235816 /* PBXTargetDependency */,
+				5411A323B601B723D526F216F6BC8391 /* PBXTargetDependency */,
 			);
 			name = "Pods-PushTemplateExtension";
 			productName = Pods_PushTemplateExtension;
@@ -459,7 +519,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				33F6D25D869F9AB6F140E504697D3601 /* PBXTargetDependency */,
+				49CCD22F3D69511F76B0AB2516DD25C2 /* PBXTargetDependency */,
 			);
 			name = "Pods-NotificationServices";
 			productName = Pods_NotificationServices;
@@ -489,6 +549,7 @@
 			projectRoot = "";
 			targets = (
 				DC29B4915ADE6A84DB1A8D013EA0D366 /* MoEngage-iOS-SDK */,
+				2D600AAD7FD09C0FB418D95D26038256 /* MoEngageInApp */,
 				B8FD681D1792FD2481F2626C6C66F031 /* MOGeofence */,
 				6FEB833175B0BD3873A86B0AD5646223 /* MORichNotification */,
 				38BEC3D31662DF4B64D4D10BB49D53E7 /* Pods-DemoMoengage */,
@@ -499,7 +560,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		65E451598A9325F01B07ACD28F79D880 /* Resources */ = {
+		083569CE36C3CE7DCF011677BE7BEF86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -540,24 +601,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/MOGeofence/MOGeofence-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6FF946C938E58320176D8471F6C8C0B1 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/MORichNotification/MORichNotification-xcframeworks-input-files.xcfilelist",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/MORichNotification/MORichNotification-xcframeworks-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/MORichNotification/MORichNotification-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A86539F52B9E559626AD1F8AE2E74689 /* [CP] Copy XCFrameworks */ = {
+		B87F2C3D2E36AABC9022D28D6F91C619 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -574,9 +618,51 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/MoEngage-iOS-SDK/MoEngage-iOS-SDK-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ED8D6478B5335D011EB2A313F1B7887B /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MoEngageInApp/MoEngageInApp-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MoEngageInApp/MoEngageInApp-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/MoEngageInApp/MoEngageInApp-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEB9DA842B16746A0283E8B4C46D2974 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MORichNotification/MORichNotification-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/MORichNotification/MORichNotification-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/MORichNotification/MORichNotification-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		63993097AB2B3CDB9C3B7BCFB3CB128F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4FBF0B14A71966E90F810F7F750F32 /* Pods-DemoMoengage-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF9BE5B9D2CC336295B650CE25F5AC36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -593,63 +679,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F596EBA1723C4CA6154BE13F85A6C1BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DD98E064B033297FE4B21BF080936BB /* Pods-DemoMoengage-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B00A0570B0FB6B65516D2194803D408 /* PBXTargetDependency */ = {
+		003FE1D5A2A398634EBF412D55EE597E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "MoEngage-iOS-SDK";
 			target = DC29B4915ADE6A84DB1A8D013EA0D366 /* MoEngage-iOS-SDK */;
-			targetProxy = 6F7B9E15E4D986884A669974E6470EE1 /* PBXContainerItemProxy */;
+			targetProxy = 86EA8EC3DCB3DBF4A8D138404F09D0D2 /* PBXContainerItemProxy */;
 		};
-		0F744DE0BA63E2CAFF1DA9DBF8235816 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MORichNotification;
-			target = 6FEB833175B0BD3873A86B0AD5646223 /* MORichNotification */;
-			targetProxy = 3B805C9EB2F3F1A016F7C3E9D1333F23 /* PBXContainerItemProxy */;
-		};
-		33F6D25D869F9AB6F140E504697D3601 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MORichNotification;
-			target = 6FEB833175B0BD3873A86B0AD5646223 /* MORichNotification */;
-			targetProxy = 90A5B02121821998E26E8FE638145ED2 /* PBXContainerItemProxy */;
-		};
-		3BA824B93C99F8BF28D680784822E53F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MORichNotification;
-			target = 6FEB833175B0BD3873A86B0AD5646223 /* MORichNotification */;
-			targetProxy = 5101F80AAFCE0FDE07B3977E0BF337D3 /* PBXContainerItemProxy */;
-		};
-		75A4D1B013607F83FDCD59628CE67384 /* PBXTargetDependency */ = {
+		030AB689A67D65744D4571200BFEAAAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "MoEngage-iOS-SDK";
 			target = DC29B4915ADE6A84DB1A8D013EA0D366 /* MoEngage-iOS-SDK */;
-			targetProxy = 6F3B8584C143063F223E01CF54D7B258 /* PBXContainerItemProxy */;
+			targetProxy = 516E084B82162EA6B31F51C65B353D40 /* PBXContainerItemProxy */;
 		};
-		9DD9A7A658EE143EAFB5CE48CE86ACEE /* PBXTargetDependency */ = {
+		208001A5F78915CFC16EBDA7343AF89E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MoEngageInApp;
+			target = 2D600AAD7FD09C0FB418D95D26038256 /* MoEngageInApp */;
+			targetProxy = 7D25795087267EC316F718279DDA19A8 /* PBXContainerItemProxy */;
+		};
+		49CCD22F3D69511F76B0AB2516DD25C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MORichNotification;
+			target = 6FEB833175B0BD3873A86B0AD5646223 /* MORichNotification */;
+			targetProxy = F3B0F2A6FED84DFC3BE0805FD0CAC2AD /* PBXContainerItemProxy */;
+		};
+		5411A323B601B723D526F216F6BC8391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MORichNotification;
+			target = 6FEB833175B0BD3873A86B0AD5646223 /* MORichNotification */;
+			targetProxy = 1DD3037B7DE1FF1BFAEF89B055890257 /* PBXContainerItemProxy */;
+		};
+		8DE170AD0240A876E8E6EAAE2408B33D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MOGeofence;
 			target = B8FD681D1792FD2481F2626C6C66F031 /* MOGeofence */;
-			targetProxy = CFFE94463A0019CD09B69D4749331685 /* PBXContainerItemProxy */;
+			targetProxy = 3F895966EF19E545F9A4EEA93C8D1C04 /* PBXContainerItemProxy */;
 		};
-		DE13831D13C2B532A853DE69F988740D /* PBXTargetDependency */ = {
+		A5F7FAFC2F1693FACA63201C69B2E64D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MoEngage-iOS-SDK";
+			target = DC29B4915ADE6A84DB1A8D013EA0D366 /* MoEngage-iOS-SDK */;
+			targetProxy = 55B7CBB0D966AAEC974AF5FBC0FE40B1 /* PBXContainerItemProxy */;
+		};
+		BDE2A2D18D696BB1C8104E74DE2586BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MORichNotification;
 			target = 6FEB833175B0BD3873A86B0AD5646223 /* MORichNotification */;
-			targetProxy = 7C8989E7FBDCAD3408D64EA08BDFEE70 /* PBXContainerItemProxy */;
+			targetProxy = 621E5DD48B8B69B4B9323AB5A1E28A15 /* PBXContainerItemProxy */;
+		};
+		E3782F40588CD8EC0F59AC3420836DB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MORichNotification;
+			target = 6FEB833175B0BD3873A86B0AD5646223 /* MORichNotification */;
+			targetProxy = 185B2003825EE57FD23A07EFA2B25F73 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		49931CF823028753903B08E935C8526B /* Release */ = {
+		094612A26B290EDD1C4E4F72CA2C2AAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F51724C5DD5DAC46E101F98905DD543B /* Pods-DemoMoengage.release.xcconfig */;
 			buildSettings = {
@@ -686,6 +776,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		3E0D233C6489027459735E4C7AA25892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D86985634D3F65D5A0C42AAEC5D2A7 /* MoEngage-iOS-SDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44F46515D47A4AE56044B8C03B2F94DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43267E3B381723E1333FDB0677CBED2C /* MoEngageInApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -790,24 +914,6 @@
 			};
 			name = Debug;
 		};
-		667895707C7433E99206A750CD56EDED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BE5496ECF43A4DD03A9A93D091B889C /* MoEngage-iOS-SDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		755B7AC2AB2EF6362D39EB599F25B4C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D62B98807F639BAF989C798429A749C0 /* Pods-PushTemplateExtension.release.xcconfig */;
@@ -845,6 +951,23 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		770F4B125B477F3FA7F4D585F8D69D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0363F2290A8E7D176DFDC078C8DFFE64 /* MORichNotification.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -908,26 +1031,9 @@
 			};
 			name = Release;
 		};
-		91F7D8FE53D6190DF2CCDC1DF35905AE /* Debug */ = {
+		8DD628D2A4B264D4A3D224BB0A64E1ED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DEA56CFF0679DD8500397F0CEED562CF /* MORichNotification.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		969597A2A973DD57C9A6705CD7808BBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2078E8B421A389893304036FC2287605 /* MORichNotification.release.xcconfig */;
+			baseConfigurationReference = 18B0AA19211D4C516258408C04547E5F /* MoEngageInApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -943,42 +1049,23 @@
 			};
 			name = Release;
 		};
-		9E87C589A71F0F67289A6B38D2C862A9 /* Debug */ = {
+		B8C25AB858ED0A1A75483CCFC8C0A2CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F6D8E2A067826F8D6DD7C542E018F9F /* Pods-DemoMoengage.debug.xcconfig */;
+			baseConfigurationReference = E9BA4C86042B9BDA8139CF96E1D9AAD2 /* MORichNotification.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		C7BE696068F8E768E4205581024B94ED /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1018,9 +1105,9 @@
 			};
 			name = Release;
 		};
-		D095913532EBEB5E6F6D89F4CB5B24A4 /* Debug */ = {
+		CB556B6AEC176874E0315FF1EFD0C9E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D99B88F34BAB7092261EAC1449BF21FE /* MoEngage-iOS-SDK.debug.xcconfig */;
+			baseConfigurationReference = E40E82A2CC18B8E85C8B9C42A7698B9E /* MoEngage-iOS-SDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1032,12 +1119,50 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE53A9C44ACC761C0401FD39FD2248DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F6D8E2A067826F8D6DD7C542E018F9F /* Pods-DemoMoengage.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 		D1C339E94A7F26A1AF7F7D793F15F483 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58AAD243D8ED08A77F817845C021D527 /* MOGeofence.debug.xcconfig */;
+			baseConfigurationReference = 23D29ACF79823DE54992354A6449B3B6 /* MOGeofence.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1054,7 +1179,7 @@
 		};
 		DB37F7DE520F996810B194E539690940 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04D51273AFDC1BFD45B97AAE00D134DB /* MOGeofence.release.xcconfig */;
+			baseConfigurationReference = 638E1D2CAF205631529187B9707D4636 /* MOGeofence.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1110,6 +1235,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		14491F3FADA0FB666EB1996E65AE404C /* Build configuration list for PBXAggregateTarget "MORichNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				770F4B125B477F3FA7F4D585F8D69D6A /* Debug */,
+				B8C25AB858ED0A1A75483CCFC8C0A2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1137,11 +1271,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68CDEAD978284D89A9A158BAC63401D4 /* Build configuration list for PBXAggregateTarget "MORichNotification" */ = {
+		8CDD707A1EE52D9AE8EF31B7B3E81C3E /* Build configuration list for PBXAggregateTarget "MoEngageInApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				91F7D8FE53D6190DF2CCDC1DF35905AE /* Debug */,
-				969597A2A973DD57C9A6705CD7808BBD /* Release */,
+				44F46515D47A4AE56044B8C03B2F94DF /* Debug */,
+				8DD628D2A4B264D4A3D224BB0A64E1ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F5E186E3C148F040331F376F04A003D /* Build configuration list for PBXAggregateTarget "MoEngage-iOS-SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E0D233C6489027459735E4C7AA25892 /* Debug */,
+				CB556B6AEC176874E0315FF1EFD0C9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1155,20 +1298,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9707E18B5DFD6B56FFF13F50FC5463B /* Build configuration list for PBXNativeTarget "Pods-DemoMoengage" */ = {
+		D7982B702670D222FCA8827BDB706532 /* Build configuration list for PBXNativeTarget "Pods-DemoMoengage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E87C589A71F0F67289A6B38D2C862A9 /* Debug */,
-				49931CF823028753903B08E935C8526B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5B051C842A900D793799163C28140D8 /* Build configuration list for PBXAggregateTarget "MoEngage-iOS-SDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D095913532EBEB5E6F6D89F4CB5B24A4 /* Debug */,
-				667895707C7433E99206A750CD56EDED /* Release */,
+				CE53A9C44ACC761C0401FD39FD2248DF /* Debug */,
+				094612A26B290EDD1C4E4F72CA2C2AAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

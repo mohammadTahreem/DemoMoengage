@@ -26,6 +26,7 @@ struct InboxView: View {
                             Text(message.notificationBody!)
                                 .onTapGesture {
                                     MOInbox .markNotificationClicked(withCampaignID: message.campaignID)
+                                    unreadCount = MOInbox.getUnreadNotifictionCount()
                                 }
                             Spacer()
                         }
@@ -43,28 +44,38 @@ struct InboxView: View {
             }
             .navigationBarTitle("Inbox", displayMode: .inline)
             .toolbar(content: {
-                Button {
-                    MOInbox.removeMessages()
-                    inboxMessages.removeAll()
-                } label: {
-                    Image(systemName: "xmark.bin")
-                }
-
-            })
-            .onAppear {
-                MOInbox.getMessagesWithCompletionBlock { (messages) in
-                    if let messages = messages{
-                        self.inboxMessages = messages
-                        print(inboxMessages)
+                HStack{
+                    ZStack{
+                        
+                        Image(systemName: "bell")
+                            .imageScale(.large)
+                            .padding()
+                            .foregroundColor(.blue)
+                        Text("\(unreadCount ?? 0)")
+                            .foregroundColor(Color.red)
+                            .offset(x: 15, y: 0)
+                    }
+                    Button {
+                        MOInbox.removeMessages()
+                        inboxMessages.removeAll()
+                    } label: {
+                        Image(systemName: "xmark.bin")
                     }
                 }
-                
-                unreadCount = MOInbox.getUnreadNotifictionCount()
-                print("unread count is: \(unreadCount!)")
+            })
+        }
+        .onAppear {
+            MOInbox.getMessagesWithCompletionBlock { (messages) in
+                if let messages = messages{
+                    self.inboxMessages = messages
+                    print(inboxMessages)
+                }
             }
-            .onDisappear {
-                inboxMessages.removeAll()
-            }
+            unreadCount = MOInbox.getUnreadNotifictionCount()
+            print(unreadCount!)
+        }
+        .onDisappear {
+            inboxMessages.removeAll()
         }
     }
 }

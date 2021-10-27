@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MoEngage
+import MOInApp
 
 @main
 struct DemoMoengageApp: App {
@@ -19,11 +20,10 @@ struct DemoMoengageApp: App {
     }
 }
 
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MOMessagingDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MOMessagingDelegate, MOInAppNativDelegate {
     
     var window: UIWindow?
-    
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //TODO: Add your MoEngage App ID
@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         MoEngage.sharedInstance().appStatus(INSTALL)
         MoEngage.enableSDKLogs(true)
         MoEngage.sharedInstance().trackLocale()
-        
+        MOInApp.sharedInstance().inAppDelegate = self;
         return true
     }
     
@@ -167,4 +167,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         return categoriesSet;
     }
+    
+    // Called when an inApp is shown on the screen
+    func inAppShown(withCampaignInfo inappCampaign: MOInAppCampaign) {
+        print("InApp Shown with Campaign ID \(inappCampaign.campaign_id)")
+    }
+
+    // Called when an inApp is dismissed by the user
+    func inAppDismissed(withCampaignInfo inappCampaign: MOInAppCampaign) {
+         print("InApp Dismissed with Campaign ID \(inappCampaign.campaign_id)")
+    }
+
+    // Called when an inApp is clicked by the user, and it has been configured with a custom action
+    func inAppClicked(withCampaignInfo inappCampaign: MOInAppCampaign, andCustomActionInfo customAction: MOInAppAction) {
+        print("InApp Clicked with Campaign ID \(inappCampaign.campaign_id)")
+        print("Custom Actions Key Value Pairs: \(customAction.keyValuePairs)")
+    }
+
+    // Called when an inApp is clicked by the user, and it has been configured with a navigation action
+    func inAppClicked(withCampaignInfo inappCampaign: MOInAppCampaign, andNavigationActionInfo navigationAction: MOInAppAction) {
+        print("InApp Clicked with Campaign ID \(inappCampaign.campaign_id)")
+        print("Navigation Action Screen Name \(navigationAction.screenName) Key Value Pairs: \((navigationAction.keyValuePairs))")
+    }
+    
 }
