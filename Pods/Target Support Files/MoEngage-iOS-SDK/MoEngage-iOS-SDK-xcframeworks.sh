@@ -107,6 +107,6 @@ install_xcframework() {
 
 install_xcframework "${PODS_ROOT}/MoEngage-iOS-SDK/Frameworks/MoEngage.xcframework" "MoEngage-iOS-SDK" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/MoEngage-iOS-SDK/Frameworks/MoEngageCore.xcframework" "MoEngage-iOS-SDK" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
-install_xcframework "${PODS_ROOT}/MoEngage-iOS-SDK/Frameworks/MOAnalytics.xcframework" "MoEngage-iOS-SDK" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/MoEngage-iOS-SDK/Frameworks/MOAnalytics.xcframework" "MoEngage-iOS-SDK" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
 install_xcframework "${PODS_ROOT}/MoEngage-iOS-SDK/Frameworks/MOMessaging.xcframework" "MoEngage-iOS-SDK" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
 

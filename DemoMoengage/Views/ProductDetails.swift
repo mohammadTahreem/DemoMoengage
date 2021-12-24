@@ -60,6 +60,7 @@ struct ProductDetails: View {
         eventProperties.addDateAttribute(Date(), withName: "Time of purchase")
 
         eventProperties.addLocationAttribute(MOGeoLocation.init(latitude: 12.23, andLongitude: 9.23), withName: "Pickup Location")
+        eventProperties.addAttribute(["منزل","منزل"], withName: "eventTest")
         
         if !addToCart {
             MoEngage.sharedInstance().trackEvent("Successful Purchase", with: eventProperties)

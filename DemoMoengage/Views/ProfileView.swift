@@ -62,6 +62,8 @@ struct ProfileView: View {
                     MoEngage.sharedInstance().setUserLastName(userlastName)
                     MoEngage.sharedInstance().setUserFirstName(userFirstName)
                     MoEngage.sharedInstance().setUserMobileNo(mobileNumber)
+                    MoEngage.sharedInstance().setUserAttribute("منزل", forKey: "منزل")
+
                 }
             }
             .padding()

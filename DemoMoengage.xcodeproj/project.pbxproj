@@ -305,7 +305,7 @@
 				CCF92C29270D59CA0095164A /* Frameworks */,
 				CCF92C2A270D59CA0095164A /* Resources */,
 				CC9B7E0527212BA1006A5DB7 /* Embed App Extensions */,
-				6CE5D83D6A4AB22D9EDA0DEF /* [CP] Embed Pods Frameworks */,
+				BFC57596EFAE2712489EE913 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,23 +388,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6CE5D83D6A4AB22D9EDA0DEF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9453AEE24C710DC8DCFF4664 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,6 +430,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC57596EFAE2712489EE913 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoMoengage/Pods-DemoMoengage-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F3B65F1F4A7AA99070CCA83A /* [CP] Check Pods Manifest.lock */ = {

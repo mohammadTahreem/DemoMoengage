@@ -8,6 +8,7 @@
 import SwiftUI
 import MoEngage
 import MOInApp
+import MOMessaging
 
 @main
 struct DemoMoengageApp: App {
@@ -25,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        //MoEngage.sharedInstance().disableBadgeReset = true
         //TODO: Add your MoEngage App ID
         let yourMoEAppID = "F6NH0Z5JWO8VC1CB4HNLA6AS" // tahreem demo app
         var sdkConfig = MOSDKConfig.init(appID: yourMoEAppID)
@@ -50,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         MoEngage.enableSDKLogs(true)
         MoEngage.sharedInstance().trackLocale()
         MOInApp.sharedInstance().inAppDelegate = self;
+
         return true
     }
     
